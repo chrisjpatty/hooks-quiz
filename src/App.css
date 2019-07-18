@@ -1,33 +1,59 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.quiz-wrapper{
+  width: 100%;
+  max-width: 500px;
+}
+.quiz-wrapper h1{
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question-wrapper{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.question-wrapper button{
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: left;
+  color: #000;
+  border: none;
+  background: rgb(221, 221, 221);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-wrapper button:focus{
+  outline: 2px solid rgb(193, 193, 193);
+}
+.question-wrapper button:hover{
+  background: rgb(233, 233, 233);
+}
+.question-wrapper button:disabled:hover{
+  background: rgb(221, 221, 221);
+}
+.question-wrapper p{
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+.question-wrapper button.next-button{
+  width: auto;
+  max-width: 170px;
+  padding: 10px;
+  text-align: center;
+  align-self: flex-end;
+}
+.question-wrapper p.feedback{
+  font-size: 18px;
+  margin: 0px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.finished-message{
+  font-size: 24px;
+  text-align: center;
 }
