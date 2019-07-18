@@ -17,6 +17,24 @@ const QUESTIONS = [
     ],
     correctIndex: 1
   },
+  {
+    text: 'The process by which React makes updates to the real DOM, based on changes to the virtual DOM',
+    answers: [
+      "Conversion",
+      "Virtual DOM",
+      "Hooks",
+      "Reconciliation"
+    ],
+    correctIndex: 3
+  },
+  {
+    text: 'What is JSX?',
+    answers: [
+      "An html-like syntax for representing html inside of Javascript files.",
+      "The capital of France"
+    ],
+    correctIndex: 0
+  }
 ]
 
 export default QUESTIONS
